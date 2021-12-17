@@ -26,6 +26,7 @@ requirements:
     - Pillow
     - psutil >=4.2.0
     - numpy >=1.10.4
+    - palettable
 
 test:
   imports:
