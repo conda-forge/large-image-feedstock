@@ -27,6 +27,7 @@ requirements:
     - psutil >=4.2.0
     - numpy >=1.10.4
     - palettable
+    - importlib-metadata  # [py<3.8]
 
 test:
   imports:
