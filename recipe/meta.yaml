@@ -10,7 +10,7 @@ source:
   sha256: efcea7d6313f053f5dc84981d40feee8e57065d764744a41b8a1ff2d18d6308e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -27,6 +27,7 @@ requirements:
     - psutil >=4.2.0
     - numpy >=1.10.4
     - palettable
+    - importlib-metadata
 
 test:
   imports:
