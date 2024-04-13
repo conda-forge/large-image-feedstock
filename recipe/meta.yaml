@@ -27,6 +27,7 @@ requirements:
     - psutil >=4.2.0
     - numpy >=1.10.4
     - palettable
+    - typing_extensions
 
 test:
   imports:
