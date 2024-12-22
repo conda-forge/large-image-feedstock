@@ -10,17 +10,17 @@ source:
   sha256: bc7dd4541ee8f5c314e90d377aa3aee61a8262d733596f943510a02a3656e138
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - setuptools
     - cachetools >=3.0.0
     - Pillow
@@ -30,6 +30,8 @@ requirements:
     - typing_extensions
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - large_image
 
