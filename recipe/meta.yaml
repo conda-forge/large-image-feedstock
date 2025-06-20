@@ -1,5 +1,5 @@
 {% set name = "large-image" %}
-{% set version = "1.32.9" %}
+{% set version = "1.32.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 39cb3b934dffa2950b0c2e8c1268c574233d2d667161391d21e0d80f14f096e8
+  sha256: 31353b3b4d10058d9557433b935436cc39b181079848a87356ee8f84b4943375
 
 build:
   number: 0
