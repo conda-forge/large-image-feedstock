@@ -1,5 +1,5 @@
 {% set name = "large-image" %}
-{% set version = "1.35.7" %}
+{% set version = "1.36.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 52aeb788fbce39416c528821712f20d77cc2f2a3327ba624176d5404c7501922
+  sha256: dd48bc3801f51e6c56521d6905003a991f3e3163551f01bc7007b8dac202cb8b
 
 build:
   number: 0
